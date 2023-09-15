@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.country {
+  margin-top: 40px;
+
+  &__search-input {
+    padding: 10px;
+    width: 30%;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #212121;
+  }
+
+  &__items {
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  &__item {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    text-decoration: none;
+  }
+
+  &__flag {
+    width: 100%;
+    height: 150px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    padding: 30px 15px 15px;
+    color: #212121;
+  }
+
+  &__name {
+    font-size: 20px;
+  }
+
+  &__capital, &__population, &__region {
+    margin-top: 7px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.single {
+  margin-top: 40px;
+
+  &__wrapper {
+    padding: 20px 0 0;
+  }
+
+  &__top {
+    a {
+      color: #212121;
+      text-decoration: none;
+      border: 1px solid #212121;
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+  }
+
+  &__bot {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__left {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    height: 200px;
+    min-width: 300px;
+    width: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  &__name {
+    font-size: 20px;
+  }
+
+  &__capital, &__population, &__region, {
+    margin-top: 7px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__items {
+    margin-top: 15px;
+  }
+
+  &__item {
+    color: #212121;
+    text-decoration: none;
+    border: 1px solid #212121;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  &__item + &__item {
+    margin-left: 20px;
+  }
+
+}
